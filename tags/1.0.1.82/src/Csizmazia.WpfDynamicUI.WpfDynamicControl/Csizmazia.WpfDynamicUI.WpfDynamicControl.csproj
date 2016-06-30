@@ -1,0 +1,353 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{93E61856-BD4E-4B10-909F-0D17088BE4AE}</ProjectGuid>
+    <OutputType>library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Csizmazia.WpfDynamicUI.WpfDynamicControl</RootNamespace>
+    <AssemblyName>Csizmazia.WpfDynamicControl</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Release\WpfDynamicControl\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GMap.NET.Core">
+      <HintPath>..\lib\GMap.NET.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.WindowsPresentation">
+      <HintPath>..\lib\GMap.NET.WindowsPresentation.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Controls.DataVisualization.Toolkit, Version=3.5.40128.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\WPFToolkit.DataVisualization.3.5.50211.1\lib\System.Windows.Controls.DataVisualization.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Controls.Input.Toolkit, Version=3.5.40128.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\WPFToolkit.3.5.50211.1\lib\System.Windows.Controls.Input.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Controls.Layout.Toolkit, Version=3.5.40128.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\WPFToolkit.3.5.50211.1\lib\System.Windows.Controls.Layout.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WPFToolkit, Version=3.5.40128.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\WPFToolkit.3.5.50211.1\lib\WPFToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="WPFToolkit.Extended">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.1.5.0\lib\net40\WPFToolkit.Extended.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BindingExtension.cs" />
+    <Compile Include="ControlProviders\InheritedPropertyControlProvider.cs" />
+    <Compile Include="ControlProviders\MethodControlProvider.cs" />
+    <Compile Include="ControlProviders\MethodControlProviders\InstanceMethodControlProvider.cs" />
+    <Compile Include="ControlProviders\MethodControlProviders\StaticMethodControlProvider.cs" />
+    <Compile Include="ControlProviders\PropertyControlProvider.cs" />
+    <Compile Include="ControlProviders\PropertyControlProviders\BooleanControlProvider.cs" />
+    <Compile Include="ControlProviders\PropertyControlProviders\ColorControlProvider.cs" />
+    <Compile Include="ControlProviders\SimplePropertyControlProvider.cs" />
+    <Compile Include="ControlProviders\PropertyControlProviders\DateTimeControlProvider.cs" />
+    <Compile Include="ControlProviders\PropertyControlProviders\DecimalControlProvider.cs" />
+    <Compile Include="ControlProviders\PropertyControlProviders\DoubleControlProvider.cs" />
+    <Compile Include="ControlProviders\PropertyControlProviders\ImageControlProvider.cs" />
+    <Compile Include="ControlProviders\PropertyControlProviders\IntegerControlProvider.cs" />
+    <Compile Include="ControlProviders\PropertyControlProviders\ItemsControlProvider.cs" />
+    <Compile Include="ControlProviders\PropertyControlProviders\ModelControlProvider.cs" />
+    <Compile Include="ControlProviders\PropertyControlProviders\PagedQueryableControlProvider.cs" />
+    <Compile Include="ControlProviders\PropertyControlProviders\StringControlProvider.cs" />
+    <Compile Include="ControlProviders\PropertyControlProviders\TimeSpanControlProvider.cs" />
+    <Compile Include="ControlProviders\PropertyControlProviders\WpfControlControlProvider.cs" />
+    <Compile Include="CustomControls\DelayedBindingTextBox.cs" />
+    <Compile Include="DesignModeCheck.cs" />
+    <Compile Include="CustomControls\DynamicGMapControl.cs" />
+    <Compile Include="DisplayAttributeExtension.cs" />
+    <Compile Include="DynamicModelControl.cs" />
+    <Compile Include="CustomControls\DynamicPagerControl.cs" />
+    <Compile Include="CustomControls\DynamicGMapMarkerControl.cs" />
+    <Compile Include="ModelDiscovery\DiscoveryExtensions.cs" />
+    <Compile Include="ModelDiscovery\IMethodFilter.cs" />
+    <Compile Include="ModelDiscovery\IPropertyFilter.cs" />
+    <Compile Include="ModelDiscovery\MethodConditionFilter.cs" />
+    <Compile Include="ModelDiscovery\MethodFilter.cs" />
+    <Compile Include="ModelDiscovery\PropertyFilter.cs" />
+    <Compile Include="ModelDiscovery\InstancePropertiesFilter.cs" />
+    <Compile Include="ModelDiscovery\SelectedItemPropertyFilter.cs" />
+    <Compile Include="ModelDiscovery\StaticMethodFilter.cs" />
+    <Compile Include="ModelDiscovery\InstanceMethodFilter.cs" />
+    <Compile Include="Properties\AssemblyInfoVersion.cs">
+      <DependentUpon>AssemblyInfoVersion.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Properties\Resources.hu.Designer.cs">
+      <DependentUpon>Resources.hu.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="ReflectiveWpfTools\BooleanToVisibilityConverter.cs" />
+    <Compile Include="ReflectiveWpfTools\XamlExportExtension.cs" />
+    <Compile Include="ReflectiveWpfTools\EmptyStringToVisibilitiyConverter.cs" />
+    <Compile Include="ReflectiveWpfTools\ImageToBitmapImageConverter.cs" />
+    <Compile Include="ReflectiveWpfTools\LocalizationMarkupExtension.cs" />
+    <Compile Include="ReflectiveWpfTools\NotNullToBooleanConverter.cs" />
+    <Compile Include="ReflectiveWpfTools\NotNullToVisibilityConverter.cs" />
+    <Compile Include="ReflectiveWpfTools\ReflectiveCommand.cs" />
+    <Compile Include="ReflectiveWpfTools\ReflectiveStaticCommand.cs" />
+    <Compile Include="ReflectiveWpfTools\ReflectiveValidationMethodRule.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ReflectiveWpfTools\RelayCommand.cs" />
+    <EmbeddedResource Include="Properties\Resources.hu.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.hu.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <AppDesigner Include="Properties\" />
+    <None Include="Properties\AssemblyInfoVersion.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>AssemblyInfoVersion.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Csizmazia.WpfDynamicUI\Csizmazia.WpfDynamicUI.csproj">
+      <Project>{8A190A4D-681D-4852-8749-6BF3D1888F32}</Project>
+      <Name>Csizmazia.WpfDynamicUI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ButtonChart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Themes\Generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Address Book-01.png" />
+    <Resource Include="Resources\Adobe Illustrator CS3 Document-01.png" />
+    <Resource Include="Resources\Adobe PDF Document-01.png" />
+    <Resource Include="Resources\Adobe Photoshop CS3 Document-01.png" />
+    <Resource Include="Resources\Battery-01.png" />
+    <Resource Include="Resources\Binoculars-01.png" />
+    <Resource Include="Resources\Book-01.png" />
+    <Resource Include="Resources\Briefcase-01.png" />
+    <Resource Include="Resources\ButtonAdd.png" />
+    <Resource Include="Resources\Button.png" />
+    <Resource Include="Resources\Button Blank Gray-01.png" />
+    <Resource Include="Resources\Button Blank Green-01.png" />
+    <Resource Include="Resources\Button Blank Red-01.png" />
+    <Resource Include="Resources\Button Blank Yellow-01.png" />
+    <Resource Include="Resources\ButtonCancel.png" />
+    <Resource Include="Resources\ButtonClose.png" />
+    <Resource Include="Resources\ButtonDelete.png" />
+    <Resource Include="Resources\ButtonDownload.png" />
+    <Resource Include="Resources\ButtonFavorite.png" />
+    <Resource Include="Resources\ButtonLast.png" />
+    <Resource Include="Resources\ButtonHelp.png" />
+    <Resource Include="Resources\ButtonInfo.png" />
+    <Resource Include="Resources\ButtonLogoff.png" />
+    <Resource Include="Resources\ButtonNext.png" />
+    <Resource Include="Resources\ButtonPause.png" />
+    <Resource Include="Resources\ButtonPlay.png" />
+    <Resource Include="Resources\ButtonPrevious.png" />
+    <Resource Include="Resources\ButtonRefresh.png" />
+    <Resource Include="Resources\ButtonReload.png" />
+    <Resource Include="Resources\ButtonReminder.png" />
+    <Resource Include="Resources\ButtonFirst.png" />
+    <Resource Include="Resources\ButtonTalkBaloon.png" />
+    <Resource Include="Resources\ButtonTurnOff.png" />
+    <Resource Include="Resources\ButtonTurnOn.png" />
+    <Resource Include="Resources\ButtonUpload.png" />
+    <Resource Include="Resources\ButtonWarning.png" />
+    <Resource Include="Resources\Calculator-01.png" />
+    <Resource Include="Resources\Calendar Blue-01.png" />
+    <Resource Include="Resources\Calendar Green-01.png" />
+    <Resource Include="Resources\Calendar Red-01.png" />
+    <Resource Include="Resources\Clipboard Paste-01.png" />
+    <Resource Include="Resources\Clipboard-01.png" />
+    <Resource Include="Resources\Clock-01.png" />
+    <Resource Include="Resources\Coin-01.png" />
+    <Resource Include="Resources\Compressed File RAR-01.png" />
+    <Resource Include="Resources\Compressed File SIT-01.png" />
+    <Resource Include="Resources\Compressed File Zip-01.png" />
+    <Resource Include="Resources\Computer Monitor-01.png" />
+    <Resource Include="Resources\Computer Network-01.png" />
+    <Resource Include="Resources\ButtonAttachRiport.png" />
+    <Resource Include="Resources\ButtonDefaultRiport.png" />
+    <Resource Include="Resources\Document Chart-01.png" />
+    <Resource Include="Resources\ButtonCopyRiport.png" />
+    <Resource Include="Resources\ButtonFlowChartRiport.png" />
+    <Resource Include="Resources\ButtonGantChartRiport.png" />
+    <Resource Include="Resources\ButtonHelpRiport.png" />
+    <Resource Include="Resources\ButtonLineChartRiport.png" />
+    <Resource Include="Resources\ButtonExcel.png" />
+    <Resource Include="Resources\ButtonPowerPointRiport.png" />
+    <Resource Include="Resources\ButtonWordRiport.png" />
+    <Resource Include="Resources\ButtonOrganizationRiport.png" />
+    <Resource Include="Resources\ButtonRiportPreview.png" />
+    <Resource Include="Resources\ButtonOpenRiport.png" />
+    <Resource Include="Resources\Document.png" />
+    <Resource Include="Resources\ButtonEditRiport.png" />
+    <Resource Include="Resources\Email Attachment-01.png" />
+    <Resource Include="Resources\Email Delete-01.png" />
+    <Resource Include="Resources\Email Download-01.png" />
+    <Resource Include="Resources\Email Forward-01.png" />
+    <Resource Include="Resources\Email Inbox-01.png" />
+    <Resource Include="Resources\Email Reply-01.png" />
+    <Resource Include="Resources\ButtonEmail.png" />
+    <Resource Include="Resources\File Audio AIFF-01.png" />
+    <Resource Include="Resources\File Audio MP3-01.png" />
+    <Resource Include="Resources\File Audio WAV-01.png" />
+    <Resource Include="Resources\File Audio WMA-01.png" />
+    <Resource Include="Resources\File Audio-01.png" />
+    <Resource Include="Resources\FileDelete.png" />
+    <Resource Include="Resources\File History-01.png" />
+    <Resource Include="Resources\FileNew.png" />
+    <Resource Include="Resources\File Open-01.png" />
+    <Resource Include="Resources\File Video 3GP-01.png" />
+    <Resource Include="Resources\File Video AVI-01.png" />
+    <Resource Include="Resources\File Video MOV-01.png" />
+    <Resource Include="Resources\File Video MPEG-01.png" />
+    <Resource Include="Resources\File Video WMV-01.png" />
+    <Resource Include="Resources\File Video-01.png" />
+    <Resource Include="Resources\FolderAdd.png" />
+    <Resource Include="Resources\Folder Compressed-01.png" />
+    <Resource Include="Resources\Folder Delete-01.png" />
+    <Resource Include="Resources\Folder Explorer-01.png" />
+    <Resource Include="Resources\Folder Generic Blue-01.png" />
+    <Resource Include="Resources\Folder Generic Green-01.png" />
+    <Resource Include="Resources\Folder Generic Red-01.png" />
+    <Resource Include="Resources\Folder Generic Silver-01.png" />
+    <Resource Include="Resources\Folder Open-01.png" />
+    <Resource Include="Resources\Folder RAR-01.png" />
+    <Resource Include="Resources\Folder.png" />
+    <Resource Include="Resources\Games-01.png" />
+    <Resource Include="Resources\Gear.png" />
+    <Resource Include="Resources\Highlighter Blue-01.png" />
+    <Resource Include="Resources\Highlighter Green-01.png" />
+    <Resource Include="Resources\Highlighter Yellow-01.png" />
+    <Resource Include="Resources\Image BMP-01.png" />
+    <Resource Include="Resources\Image GIF-01.png" />
+    <Resource Include="Resources\Image JPEG-01.png" />
+    <Resource Include="Resources\Image PNG-01.png" />
+    <Resource Include="Resources\Image TIFF-01.png" />
+    <Resource Include="Resources\Lock.png" />
+    <Resource Include="Resources\LockUnlock.png" />
+    <Resource Include="Resources\MyDocuments.png" />
+    <Resource Include="Resources\My Ebooks-01.png" />
+    <Resource Include="Resources\My Music-01.png" />
+    <Resource Include="Resources\My Pictures.png" />
+    <Resource Include="Resources\My Videos-01.png" />
+    <Resource Include="Resources\My Websites-01.png" />
+    <Resource Include="Resources\Network Firewall-01.png" />
+    <Resource Include="Resources\Network MAC-01.png" />
+    <Resource Include="Resources\Network PC-01.png" />
+    <Resource Include="Resources\Network Refresh-01.png" />
+    <Resource Include="Resources\Pen Blue-01.png" />
+    <Resource Include="Resources\Pen Green-01.png" />
+    <Resource Include="Resources\Pen Red-01.png" />
+    <Resource Include="Resources\ButtonSave.png" />
+    <Resource Include="Resources\ButtonEdit.png" />
+    <Resource Include="Resources\USB-01.png" />
+    <Resource Include="Resources\User Administrator Blue-01.png" />
+    <Resource Include="Resources\User Administrator Green-01.png" />
+    <Resource Include="Resources\User Administrator Red-01.png" />
+    <Resource Include="Resources\User Chat-01.png" />
+    <Resource Include="Resources\User Clients-01.png" />
+    <Resource Include="Resources\User Coat Blue-01.png" />
+    <Resource Include="Resources\User Coat Green-01.png" />
+    <Resource Include="Resources\User Coat Red-01.png" />
+    <Resource Include="Resources\User Executive Blue-01.png" />
+    <Resource Include="Resources\User Executive Green-01.png" />
+    <Resource Include="Resources\User Executive Red-01.png" />
+    <Resource Include="Resources\User Group-01.png" />
+    <Resource Include="Resources\User Preppy Blue-01.png" />
+    <Resource Include="Resources\User Preppy Green-01.png" />
+    <Resource Include="Resources\User Preppy Red-01.png" />
+    <Resource Include="Resources\Web HTML-01.png" />
+    <Resource Include="Resources\Web XML-01.png" />
+    <Resource Include="Resources\Window Refresh-01.png" />
+    <Resource Include="Resources\ButtonOpen.png" />
+    <Resource Include="Resources\Windows Cascade-01.png" />
+    <Resource Include="Resources\Windows-01.png" />
+    <Resource Include="Resources\ButtonZoomIn.png" />
+    <Resource Include="Resources\ButtonZoomOut.png" />
+    <Resource Include="Resources\ButtonZoom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ButtonLogin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\MapGreenMarker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <Target Name="AfterCompile" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties BuildVersion_BuildVersioningStyle="None.None.None.None" BuildVersion_UpdateAssemblyVersion="False" BuildVersion_AssemblyInfoFilename="" BuildVersion_UseGlobalSettings="False" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

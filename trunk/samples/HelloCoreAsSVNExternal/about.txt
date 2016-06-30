@@ -1,0 +1,4 @@
+Sample projects using Core as SVN external (no nuget package reference, but direct SVN code import to WpfDynamicUI)
+
+Reason:
+Features development area...

@@ -1,0 +1,7 @@
+Entity Data Administration
+
+Keywords:
+CRUD for Entity context
+Paging.
+Filtering.
+Entity Workflow.

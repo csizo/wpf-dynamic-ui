@@ -1,0 +1,87 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Csizmazia.WpfDynamicUI", "Csizmazia.WpfDynamicUI\Csizmazia.WpfDynamicUI.csproj", "{8A190A4D-681D-4852-8749-6BF3D1888F32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Csizmazia.WpfDynamicUI.WpfDynamicControl", "Csizmazia.WpfDynamicUI.WpfDynamicControl\Csizmazia.WpfDynamicUI.WpfDynamicControl.csproj", "{93E61856-BD4E-4B10-909F-0D17088BE4AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfDynamicUI.TechnologySamples", "Csizmazia.WpfDynamicUI.WpfApplicationHost\WpfDynamicUI.TechnologySamples.csproj", "{F07D038A-E5E3-4975-BE7C-4C27EB810D99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Csizmazia.WpfDynamicUI.BusinessModel.SampleWpfCustomView", "Csizmazia.WpfDynamicUI.BusinessModel.SampleWpfCustomView\Csizmazia.WpfDynamicUI.BusinessModel.SampleWpfCustomView.csproj", "{B643E537-3098-4161-92B1-344160CB1FB6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B8E2B201-EAAF-4585-A1E4-130AB9C2AE50}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+		WpfDynamicUI.vsmdi = WpfDynamicUI.vsmdi
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{2A99688C-B193-488B-9BFB-8B4295C85370}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{A60527A6-61B7-449D-A307-16B82CB75A43}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Models", "Models", "{FB34692C-66E6-4367-94B6-2FE4D6B150BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Csizmazia.WpfDynamicUI.SampleBusinessModel", "Csizmazia.WpfDynamicUI.SampleBusinessModel\Csizmazia.WpfDynamicUI.SampleBusinessModel.csproj", "{16B19106-F846-4B30-8B72-9D0C96B76D24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Csizmazia.WpfDynamicUI.Tests", "Csizmazia.WpfDynamicUI.Tests\Csizmazia.WpfDynamicUI.Tests.csproj", "{155A192B-CC48-4838-ADB3-0BD373F712A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Csizmazia.WpfDynamicUI.DataServices", "Csizmazia.WpfDynamicUI.DataServices\Csizmazia.WpfDynamicUI.DataServices.csproj", "{D75FCFE4-7E77-4F54-B8FC-921AA3320E31}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = WpfDynamicUI.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A190A4D-681D-4852-8749-6BF3D1888F32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A190A4D-681D-4852-8749-6BF3D1888F32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A190A4D-681D-4852-8749-6BF3D1888F32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A190A4D-681D-4852-8749-6BF3D1888F32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93E61856-BD4E-4B10-909F-0D17088BE4AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93E61856-BD4E-4B10-909F-0D17088BE4AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93E61856-BD4E-4B10-909F-0D17088BE4AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93E61856-BD4E-4B10-909F-0D17088BE4AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F07D038A-E5E3-4975-BE7C-4C27EB810D99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F07D038A-E5E3-4975-BE7C-4C27EB810D99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F07D038A-E5E3-4975-BE7C-4C27EB810D99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F07D038A-E5E3-4975-BE7C-4C27EB810D99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B643E537-3098-4161-92B1-344160CB1FB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B643E537-3098-4161-92B1-344160CB1FB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B643E537-3098-4161-92B1-344160CB1FB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B643E537-3098-4161-92B1-344160CB1FB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16B19106-F846-4B30-8B72-9D0C96B76D24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16B19106-F846-4B30-8B72-9D0C96B76D24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16B19106-F846-4B30-8B72-9D0C96B76D24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16B19106-F846-4B30-8B72-9D0C96B76D24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{155A192B-CC48-4838-ADB3-0BD373F712A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{155A192B-CC48-4838-ADB3-0BD373F712A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{155A192B-CC48-4838-ADB3-0BD373F712A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{155A192B-CC48-4838-ADB3-0BD373F712A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D75FCFE4-7E77-4F54-B8FC-921AA3320E31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D75FCFE4-7E77-4F54-B8FC-921AA3320E31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D75FCFE4-7E77-4F54-B8FC-921AA3320E31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D75FCFE4-7E77-4F54-B8FC-921AA3320E31}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{93E61856-BD4E-4B10-909F-0D17088BE4AE} = {2A99688C-B193-488B-9BFB-8B4295C85370}
+		{8A190A4D-681D-4852-8749-6BF3D1888F32} = {2A99688C-B193-488B-9BFB-8B4295C85370}
+		{D75FCFE4-7E77-4F54-B8FC-921AA3320E31} = {2A99688C-B193-488B-9BFB-8B4295C85370}
+		{B643E537-3098-4161-92B1-344160CB1FB6} = {FB34692C-66E6-4367-94B6-2FE4D6B150BF}
+		{16B19106-F846-4B30-8B72-9D0C96B76D24} = {FB34692C-66E6-4367-94B6-2FE4D6B150BF}
+		{155A192B-CC48-4838-ADB3-0BD373F712A4} = {A60527A6-61B7-449D-A307-16B82CB75A43}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		BuildVersion_StartDate = 1975/10/21
+		BuildVersion_UpdateAssemblyVersion = False
+		BuildVersion_AssemblyInfoFilename = 
+		BuildVersion_UseGlobalSettings = False
+		BuildVersion_BuildVersioningStyle = None.None.None.None
+	EndGlobalSection
+EndGlobal

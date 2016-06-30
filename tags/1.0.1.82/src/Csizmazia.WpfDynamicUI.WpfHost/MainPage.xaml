@@ -1,0 +1,44 @@
+﻿<Page x:Class="Csizmazia.WpfDynamicUI.WpfHost.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:WpfDynamicControl="clr-namespace:Csizmazia.WpfDynamicUI.WpfDynamicControl;assembly=Csizmazia.WpfDynamicControl"
+      xmlns:BusinessModel="clr-namespace:Csizmazia.WpfDynamicUI.BusinessModel;assembly=Csizmazia.WpfDynamicUI"
+      mc:Ignorable="d" d:DesignHeight="300" d:DesignWidth="800" x:Name="hostPage"
+      Title="{Binding Path=BusinessApplication.WindowTitle}">
+
+  <Page.DataContext>
+    <BusinessModel:BusinessApplicationFactory />
+  </Page.DataContext>
+
+  <Grid x:Name="hostGrid">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto" />
+      <RowDefinition />
+      <RowDefinition Height="Auto" />
+    </Grid.RowDefinitions>
+
+    <Border Grid.Row="1" BorderThickness="1" BorderBrush="Black" CornerRadius="3" Padding="3">
+      <WpfDynamicControl:DynamicModelControl x:Name="dynamicModelControl"
+                                             DataContext="{Binding Path=BusinessApplication.CurrentModel}" DisplayMenu="True" DisplayContextActionPanel="True" />
+    </Border>
+
+    <StatusBar Grid.Row="2">
+      <StatusBarItem Content="Wpf Dynamic User Interface - The Business Application Library" />
+
+
+      <StatusBarItem HorizontalAlignment="Right">
+        <StatusBarItem.Content>
+          <TextBlock>
+            Model Render time:
+            <TextBlock Text="{Binding Path=RenderTime.TotalMilliseconds, ElementName=dynamicModelControl}" />
+            ms
+          </TextBlock>
+        </StatusBarItem.Content>
+      </StatusBarItem>
+    </StatusBar>
+
+
+  </Grid>
+</Page>

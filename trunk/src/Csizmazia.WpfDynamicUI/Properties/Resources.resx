@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutApplicationDescription" xml:space="preserve">
+    <value>Opens the about form</value>
+  </data>
+  <data name="AboutApplicationName" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="ChangeLanguageDescription" xml:space="preserve">
+    <value>Chaging language of the application</value>
+  </data>
+  <data name="ChangeLanguageName" xml:space="preserve">
+    <value>Change language</value>
+  </data>
+  <data name="CloseDescription" xml:space="preserve">
+    <value>Click to close this form and return to previous form</value>
+  </data>
+  <data name="CloseName" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="ComponentsName" xml:space="preserve">
+    <value>Components</value>
+  </data>
+  <data name="CultureInfoChanged" xml:space="preserve">
+    <value>The culture has been changed to {0}.</value>
+  </data>
+  <data name="CulturesName" xml:space="preserve">
+    <value>Cultures</value>
+  </data>
+  <data name="CurrentPageDescription" xml:space="preserve">
+    <value>Sets the current page</value>
+  </data>
+  <data name="CurrentPageName" xml:space="preserve">
+    <value>Current page</value>
+  </data>
+  <data name="DescriptionName" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="FilterCultureDisplayNameDescription" xml:space="preserve">
+    <value>Filter for displayed name</value>
+  </data>
+  <data name="FilterCultureDisplayNameName" xml:space="preserve">
+    <value>Culture display name filter</value>
+  </data>
+  <data name="FilterCultureDisplayNamePrompt" xml:space="preserve">
+    <value>Enter display name to filter</value>
+  </data>
+  <data name="FilterCultureEnglishNameDescription" xml:space="preserve">
+    <value>Filter for english name</value>
+  </data>
+  <data name="FilterCultureEnglishNameName" xml:space="preserve">
+    <value>Culture english name</value>
+  </data>
+  <data name="FilterCultureEnglishNamePrompt" xml:space="preserve">
+    <value>Filter for english name</value>
+  </data>
+  <data name="FilterCultureNameName" xml:space="preserve">
+    <value>Culture name filter</value>
+  </data>
+  <data name="FilterCultureNamePrompt" xml:space="preserve">
+    <value>Enter to filter culture name</value>
+  </data>
+  <data name="FilterCultureNativeNameDescription" xml:space="preserve">
+    <value>Filter for native name</value>
+  </data>
+  <data name="FilterCultureNativeNameName" xml:space="preserve">
+    <value>Culture native name</value>
+  </data>
+  <data name="FilterCultureNativeNamePrompt" xml:space="preserve">
+    <value>Enter native name to filter</value>
+  </data>
+  <data name="FilterCultureSystemNameDescription" xml:space="preserve">
+    <value>Filter for system name</value>
+  </data>
+  <data name="FilterCultureSystemNameName" xml:space="preserve">
+    <value>Culture system name</value>
+  </data>
+  <data name="FilterCultureSystemNamePrompt" xml:space="preserve">
+    <value>Enter system name to filter</value>
+  </data>
+  <data name="InitializeExtensionCacheDescription" xml:space="preserve">
+    <value>Initializes the extension cache</value>
+  </data>
+  <data name="InitializeExtensionCacheName" xml:space="preserve">
+    <value>Initialize cache</value>
+  </data>
+  <data name="LicenseMIT" xml:space="preserve">
+    <value>Copyright (c) 2008-2011 Universe, WARNING: This software can access some map providers and may viotile their Terms of Service, you use it at your own risk, nothing is forcing you to accept this ;} Source itself is legal!
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</value>
+  </data>
+  <data name="LicenseMs_PL" xml:space="preserve">
+    <value>Microsoft Public License (Ms-PL)
+
+This license governs use of the accompanying software. If you use the software, you accept this license. If you do not accept the license, do not use the software.
+
+1. Definitions
+
+The terms "reproduce," "reproduction," "derivative works," and "distribution" have the same meaning here as under U.S. copyright law.
+
+A "contribution" is the original software, or any additions or changes to the software.
+
+A "contributor" is any person that distributes its contribution under this license.
+
+"Licensed patents" are a contributor's patent claims that read directly on its contribution.
+
+2. Grant of Rights
+
+(A) Copyright Grant- Subject to the terms of this license, including the license conditions and limitations in section 3, each contributor grants you a non-exclusive, worldwide, royalty-free copyright license to reproduce its contribution, prepare derivative works of its contribution, and distribute its contribution or any derivative works that you create.
+
+(B) Patent Grant- Subject to the terms of this license, including the license conditions and limitations in section 3, each contributor grants you a non-exclusive, worldwide, royalty-free license under its licensed patents to make, have made, use, sell, offer for sale, import, and/or otherwise dispose of its contribution in the software or derivative works of the contribution in the software.
+
+3. Conditions and Limitations
+
+(A) No Trademark License- This license does not grant you rights to use any contributors' name, logo, or trademarks.
+
+(B) If you bring a patent claim against any contributor over patents that you claim are infringed by the software, your patent license from such contributor to the software ends automatically.
+
+(C) If you distribute any portion of the software, you must retain all copyright, patent, trademark, and attribution notices that are present in the software.
+
+(D) If you distribute any portion of the software in source code form, you may do so only under this license by including a complete copy of this license with your distribution. If you distribute any portion of the software in compiled or object code form, you may only do so under a license that complies with this license.
+
+(E) The software is licensed "as-is." You bear the risk of using it. The contributors give no express warranties, guarantees or conditions. You may have additional consumer rights under your local laws which this license cannot change. To the extent permitted under your local laws, the contributors exclude the implied warranties of merchantability, fitness for a particular purpose and non-infringement.</value>
+  </data>
+  <data name="LicenseName" xml:space="preserve">
+    <value>License</value>
+  </data>
+  <data name="LoginDescription" xml:space="preserve">
+    <value>Login to the system</value>
+  </data>
+  <data name="LoginName" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="MoveFirstDescription" xml:space="preserve">
+    <value>Load the first page</value>
+  </data>
+  <data name="MoveFirstName" xml:space="preserve">
+    <value>First</value>
+  </data>
+  <data name="MoveLastDescription" xml:space="preserve">
+    <value>Load the last page</value>
+  </data>
+  <data name="MoveLastName" xml:space="preserve">
+    <value>Last</value>
+  </data>
+  <data name="MoveNextDescription" xml:space="preserve">
+    <value>Load the next page</value>
+  </data>
+  <data name="MoveNextName" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="MovePreviousDescription" xml:space="preserve">
+    <value>Load the previous page</value>
+  </data>
+  <data name="MovePreviousName" xml:space="preserve">
+    <value>Previous</value>
+  </data>
+  <data name="NameName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="PageCountDescription" xml:space="preserve">
+    <value>Displays the number of pages</value>
+  </data>
+  <data name="PageCountName" xml:space="preserve">
+    <value>Page count</value>
+  </data>
+  <data name="PageSizeDescription" xml:space="preserve">
+    <value>Page size</value>
+  </data>
+  <data name="PageSizeName" xml:space="preserve">
+    <value>Page size</value>
+  </data>
+  <data name="ReloadDescription" xml:space="preserve">
+    <value>Reloads the collection</value>
+  </data>
+  <data name="ReloadName" xml:space="preserve">
+    <value>Reload</value>
+  </data>
+  <data name="ResetDesciption" xml:space="preserve">
+    <value>Resets the collection</value>
+  </data>
+  <data name="ResetName" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="SelectedCulturesItem" xml:space="preserve">
+    <value>Selected culture</value>
+  </data>
+  <data name="UrlName" xml:space="preserve">
+    <value>Url</value>
+  </data>
+  <data name="UseLanguageName" xml:space="preserve">
+    <value>Use language</value>
+  </data>
+  <data name="WelcomeMessageName" xml:space="preserve">
+    <value>Welcome message</value>
+  </data>
+</root>

@@ -1,0 +1,17 @@
+﻿<Window x:Class="WpfUserInterface.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:WpfDynamicControl="clr-namespace:Csizmazia.WpfDynamicUI.WpfDynamicControl;assembly=Csizmazia.WpfDynamicControl"
+        xmlns:BusinessModel="clr-namespace:Csizmazia.WpfDynamicUI.BusinessModel;assembly=Csizmazia.WpfDynamicUI"
+        Title="MainWindow" WindowState="Maximized">
+    <Window.DataContext>
+        <BusinessModel:BusinessApplicationFactory/>
+    </Window.DataContext>
+    <Grid>
+        
+        <WpfDynamicControl:DynamicModelControl 
+            DataContext="{Binding Path=BusinessApplication.ActiveModel}" 
+            DisplayMenu="True"
+            />
+    </Grid>
+</Window>
